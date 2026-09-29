@@ -32,7 +32,7 @@ const TRANSLATIONS = {
       greeting: 'Hola, soy',
       name:     'Ruben Dario Scalante Rojas',
       role:     'Desarrollador Backend .NET',
-      tagline:  'Arquitecturas limpias · Cloud Azure & AWS · +4 años de experiencia',
+      tagline:  'Arquitecturas limpias · Cloud Azure · +4 años de experiencia',
       btnWork:  'Ver experiencia',
       btnCv:    'Descargar CV',
       btnContact: 'Contactar',
@@ -41,7 +41,7 @@ const TRANSLATIONS = {
     /* About */
     about: {
       title: 'Sobre mí',
-      body: `Soy Desarrollador Backend especializado en .NET (C#, .NET Framework, .NET Core, .NET 6/8/10), con más de 4 años de experiencia diseñando, implementando y manteniendo sistemas y servicios backend de alto rendimiento. Tengo experiencia sólida migrando y modernizando plataformas .NET hacia arquitecturas limpias y hexagonales, optimizando bases de datos y automatizando despliegues mediante CI/CD en Azure. Me reconocen por mi alta responsabilidad, mi capacidad investigativa y mi liderazgo técnico en equipos pequeños de desarrollo. Estoy comprometido con la calidad del software, la seguridad (OWASP) y la mejora continua de procesos, y busco aportar mi experiencia técnica en .NET para generar valor de negocio en entornos colaborativos.`,
+      body: `Soy Desarrollador Backend especializado en .NET (C#, .NET Core, .NET 6/8/10), con más de 4 años modernizando sistemas backend de alto rendimiento sobre Azure. Migré una plataforma monolítica completa a .NET 6 y diseñé arquitecturas Clean/Hexagonal para un ecosistema de 7 microservicios que hoy atiende a más de 3.000 usuarios. Como consultor freelance, integro herramientas de IA en flujos de desarrollo reales para acelerar entregas y automatizar procesos; en paralelo, investigo IA aplicada (RAG, agentes) por cuenta propia en proyectos personales. Busco un rol donde combinar ingeniería .NET sólida con esta base de IA aplicada.`,
     },
 
     /* Skills section */
@@ -66,14 +66,14 @@ const TRANSLATIONS = {
         {
           id:       'sag',
           company:  'SAG — Soluciones Ambientales y Geográficas S.A.S.',
-          role:     'Desarrollador Backend .NET',
+          role:     'Consultor Freelance — Desarrollo .NET & Automatización con IA',
           period:   'Abr 2026 — Sep 2026',
-          location: 'Neiva, Huila',
+          location: 'Neiva, Huila (Remoto)',
           bullets: [
-            'Desarrollé el sitio web corporativo con Astro 6, Tailwind CSS 4 y TypeScript estricto (i18n ES/EN, mapas con Leaflet), desplegado en Cloudflare Pages.',
-            'Construí SAG Project Hub, un gestor interno de tareas, proyectos y calendario tipo kanban para el equipo de campo, sin servidor propio e instalable como PWA offline; migré su código de JavaScript vainilla a React 19 con TypeScript de forma incremental.',
-            'Integré la API de Google Drive de punta a punta: autenticación, sincronización casi en tiempo real, búsqueda por nombre y contenido (OCR) y gestión de carpetas por proyecto.',
-            'Implementé la suite de pruebas con Vitest y Testing Library sobre jsdom, adopté un flujo de Git con ramas develop/feature/fix y pull request, e incorporé herramientas de IA (Claude Code, Antigravity, Open Code) en el flujo de trabajo diario.',
+            'Como consultor freelance, investigué y construí desde cero el sitio web corporativo con Astro 6, Tailwind CSS 4 y TypeScript estricto (i18n ES/EN, mapas interactivos con Leaflet), desplegado en Cloudflare Pages.',
+            'Diseñé y desarrollé, con asistencia de IA, SAG Project Hub para un equipo de 3 líderes de planificación de campo: un gestor tipo kanban construido directamente en React 19 con TypeScript, sin servidor propio e instalable como PWA offline, con su suite de pruebas automatizada en Vitest y Testing Library.',
+            'Investigué e integré la API de Google Drive de punta a punta para automatizar la sincronización, la búsqueda por contenido (OCR) y la organización documental del equipo, eliminando tareas manuales de archivo.',
+            'Asesoré en la incorporación de herramientas de IA (Claude Code, Antigravity, Open Code) al flujo de trabajo diario, adoptando un flujo de Git basado en ramas develop/feature/fix y pull requests.',
           ],
         },
         {
@@ -81,35 +81,29 @@ const TRANSLATIONS = {
           company:  'INTEIA',
           role:     'Desarrollador Backend .NET',
           period:   'Feb 2023 — Mar 2026',
-          location: 'Medellín, Antioquia',
+          location: 'Medellín, Antioquia (Remoto)',
           bullets: [
-            'Migré el backend de .NET Core 3.1 a .NET 6, actualizando dependencias y validando la compatibilidad mediante pruebas unitarias y de integración exhaustivas antes de cada despliegue a producción.',
-            'Refactoricé arquitecturas monolíticas (N-capas) aplicando principios SOLID y patrones de diseño para mejorar modularidad y mantenibilidad del código.',
-            'Implementé arquitecturas modernas en .NET 8 (Clean Architecture y Hexagonal) con patrones CQRS, Mediator y una capa de servicios (Services) para concentrar la lógica de negocio, priorizando escalabilidad y resiliencia.',
-            'Organicé el código por casos de uso (Use Cases), desarrollé middlewares personalizados para el manejo centralizado de excepciones y logging, e implementé autenticación JWT junto con autorización basada en roles y políticas para proteger los endpoints.',
-            'Apliqué inyección de dependencias y mapeo de objetos (Mapper) entre entidades y DTOs, implementé la capa de persistencia con el patrón Repository/UnitOfWork, y diseñé proxies para el consumo seguro de servicios externos.',
-            'Automaticé tareas en segundo plano y procesos programados con Hangfire, incluyendo monitoreo de ejecución y reintentos ante fallos.',
-            'Implementé comunicación en tiempo real con SignalR integrado con Firebase Cloud Messaging para el envío de notificaciones push.',
-            'Configuré pipelines CI/CD en Azure DevOps, logrando despliegues reproducibles, monitoreados y confiables.',
-            'Identifiqué y corregí vulnerabilidades de seguridad con SonarQube y Snyk, aplicando OWASP Top 10.',
-            'Optimicé el rendimiento e índices de bases de datos MongoDB y Cosmos DB, e integré Redis Cache para reducir tiempos de respuesta.',
-            'Diseñé y gestioné contenedores Docker, optimizando imágenes, redes y prácticas de seguridad.',
-            'Integré servicios de Azure (Key Vault, Communication Services, Application Insights, Entra ID B2C) y SendGrid para comunicaciones, monitoreo y gestión segura de identidades.',
-            'Aseguré la calidad del software mediante pruebas unitarias con XUnit y validación de datos con Fluent Validation.',
+            'Migré un sistema monolítico completo de .NET Core 3.1 a .NET 6. El cambio de versión rompió toda la funcionalidad por dependencias directas del framework anterior: adapté el 100% del código y validé cada cambio con pruebas unitarias y de integración antes de cada despliegue a producción.',
+            'Refactoricé la arquitectura monolítica (N-capas) e implementé arquitecturas modernas en .NET 8 (Clean Architecture y Hexagonal) con CQRS, Mediator y una capa de servicios organizada por casos de uso (Use Cases), en un ecosistema de 7 microservicios con un API Gateway como punto de entrada centralizado, desplegado en Azure junto con el equipo de DevOps.',
+            'Implementé autenticación JWT y autorización basada en roles y políticas, middlewares centralizados de excepciones y logging, inyección de dependencias, patrón Repository/UnitOfWork y proxies para servicios externos; automaticé tareas en segundo plano con Hangfire (monitoreo y reintentos ante fallos), asegurando la calidad con XUnit y Fluent Validation.',
+            'Implementé comunicación en tiempo real con SignalR integrado con Firebase Cloud Messaging, entregando notificaciones push personalizadas por empresa a bases de hasta 3.000 usuarios simultáneos.',
+            'Configuré pipelines CI/CD en Azure DevOps con despliegues al cierre de cada sprint (ciclos de 2 semanas) y liberaciones adicionales ante bugs críticos, logrando despliegues reproducibles, monitoreados y confiables.',
+            'Identifiqué y corregí vulnerabilidades de seguridad de severidad alta y media con SonarQube y Snyk, aplicando OWASP Top 10 y reforzando autenticación y autorización.',
+            'Lideré la migración de una instancia autoadministrada de MongoDB en máquina virtual hacia Azure Cosmos DB for MongoDB (completamente administrado), preservando el 100% de la funcionalidad existente. Optimicé índices e integré Redis Cache, reduciendo tiempos de respuesta a un rango de 500 ms – 1 s.',
+            'Diseñé y gestioné contenedores Docker, e integré servicios de Azure (Key Vault, Communication Services, Application Insights, Entra ID B2C) y SendGrid para comunicaciones, monitoreo y gestión segura de identidades.',
           ],
         },
         {
           id:       'indigo',
           company:  'INDIGO TECHNOLOGIES',
-          role:     'Technical Junior Developer LII',
+          role:     'Desarrollador Backend Junior II',
           period:   'Feb 2022 — Ene 2023',
-          location: 'Neiva, Huila',
+          location: 'Neiva, Huila (Presencial)',
           bullets: [
-            'Diseñé y desarrollé APIs RESTful con .NET Framework y .NET 6 (Database First), documentadas con Swagger y probadas con Postman.',
-            'Implementé autenticación JWT y consumí endpoints de aplicaciones externas garantizando integración confiable entre sistemas.',
-            'Gestioné ciclo de vida de proyectos en Azure DevOps y Git: ramas, pull requests, resolución de conflictos y despliegues.',
-            'Integré microservicios serverless en AWS Lambda, DynamoDB (indexación secundaria) y API Gateway con control de acceso por rutas.',
-            'Participé en configuración de pipelines CI/CD y estrategias de despliegue automatizado en Azure y AWS.',
+            'Diseñé y desarrollé 3 APIs RESTful en .NET Framework (migradas y optimizadas a .NET 6, enfoque Database First), implementando un mecanismo propio de autenticación JWT para centralizar la seguridad — foco principal de mi rol en el equipo.',
+            'Documenté las APIs con Swagger (OpenAPI) y realicé pruebas exhaustivas con Postman, facilitando la integración con equipos multidisciplinarios.',
+            'Gestioné el ciclo de vida de proyectos en Azure DevOps y Git (ramas, pull requests, resolución de conflictos y despliegues).',
+            'Diseñé microservicios serverless desacoplados y participé en la configuración de pipelines CI/CD y estrategias de despliegue automatizado en Azure.',
           ],
         },
         {
@@ -117,13 +111,12 @@ const TRANSLATIONS = {
           company:  'SOAINT SOFTWARE',
           role:     'Desarrollador Backend',
           period:   'Jun 2021 — Ene 2022',
-          location: 'Bogotá D.C.',
+          location: 'Bogotá D.C. (Remoto)',
           bullets: [
-            'Diseñé y desarrollé microservicios con Java y Spring Boot, promoviendo arquitecturas escalables y desacopladas.',
-            'Diseñé y consumí APIs REST documentadas con Swagger; pruebas de endpoints con Postman.',
-            'Gestioné y configuré contenedores en OpenShift (despliegues y ajustes básicos en Pods).',
-            'Desarrollé procedimientos almacenados, triggers y cursores en SQL Server; optimización DML.',
-            'Integré almacenamiento de archivos con Amazon S3 para gestión de objetos y versionamiento.',
+            'Diseñé y desarrollé 10 microservicios escalables con Java y Spring Boot (lectura y procesamiento de JSON), exponiendo y consumiendo APIs REST documentadas con Swagger (OpenAPI) y validadas con Postman.',
+            'Gestioné y desplegué contenedores en OpenShift, realizando ajustes en Pods.',
+            'Desarrollé procedimientos almacenados, vistas, triggers y cursores en SQL Server para la optimización de bases de datos.',
+            'Integré almacenamiento de archivos en la nube para gestión de objetos y versionamiento.',
           ],
         },
       ],
@@ -167,8 +160,8 @@ const TRANSLATIONS = {
         },
         {
           name:  'API Gateway & Serverless (Privado)',
-          desc:  'Modernización y desacoplamiento de monolitos migrando flujos a AWS Lambda, con control de acceso vía API Gateway e indexación en DynamoDB.',
-          tags:  ['AWS Lambda', 'DynamoDB', 'Microservicios'],
+          desc:  'Modernización y desacoplamiento de monolitos migrando flujos a Azure Functions, con control de acceso vía Azure API Management e indexación en Cosmos DB.',
+          tags:  ['Azure Functions', 'Cosmos DB', 'Microservicios'],
           links: { private: true },
         },
         {
@@ -182,16 +175,15 @@ const TRANSLATIONS = {
 
     /* Certifications */
     certs: {
-      title: 'Certificaciones',
+      title: 'Certificaciones y Cursos',
       items: [
         {
-          name:   'Máster en Ingeniería de Software',
-          issuer: 'UNIR',
-          year:   '2024',
-          icon:   'school',
+          name:   'IA Aplicada — Resuelve Retos Reales con Claude',
+          issuer: 'Smart4AI & Ruta N · Bootcamp intensivo (12 h)',
+          year:   'Jul 2026',
         },
       ],
-      note: 'En proceso de certificaciones Azure (AZ-900 / AZ-204) y AWS (Cloud Practitioner).',
+      note: 'Cursos en formación (Udemy): Arquitectura de Aplicaciones Empresariales con .NET 10 · Observabilidad de Microservicios .NET con OpenTelemetry · Docker y Kubernetes para .NET · Dapper con .NET 8 y Minimal APIs.',
     },
 
     /* Contact */
@@ -208,7 +200,7 @@ const TRANSLATIONS = {
     achievements: {
       title: 'Logros',
       items: [
-        'Referente técnico de un equipo de 5 desarrolladores en INTEIA para AppiMotion Plus (plataforma de movilidad sostenible): participé en la definición de la arquitectura de datos y software, gestioné la documentación técnica y coordiné con DevOps el pipeline CI/CD en Azure/Docker (despliegues de 3–5 min).',
+        'Referente técnico de un equipo de 5 desarrolladores en INTEIA para AppiMotion Plus (plataforma de movilidad sostenible): contribuí a la definición de la arquitectura de datos y software, gestioné la documentación técnica y coordiné con DevOps el pipeline CI/CD en Azure/Docker (despliegues de 3–5 min).',
         '+4 años de experiencia backend en entornos reales de producción.',
         'Máster universitario en Ingeniería de Software (UNIR, España).',
       ],
@@ -225,7 +217,7 @@ const TRANSLATIONS = {
       title: 'Idiomas',
       items: [
         { name: 'Español', level: 'Nativo' },
-        { name: 'Inglés',  level: 'Intermedio (B1)' },
+        { name: 'Inglés',  level: 'Básico (A2)' },
       ],
     },
   },
@@ -249,7 +241,7 @@ const TRANSLATIONS = {
       greeting: "Hi, I'm",
       name:     'Ruben Dario Scalante Rojas',
       role:     '.NET Backend Developer',
-      tagline:  'Clean Architecture · Azure & AWS Cloud · 4+ years of experience',
+      tagline:  'Clean Architecture · Azure Cloud · 4+ years of experience',
       btnWork:  'View experience',
       btnCv:    'Download CV',
       btnContact: 'Get in touch',
@@ -257,7 +249,7 @@ const TRANSLATIONS = {
 
     about: {
       title: 'About me',
-      body: `I am a Backend Developer specializing in .NET (C#, .NET Framework, .NET Core, .NET 6/8/10), with over 4 years of experience designing, implementing, and maintaining high-performance backend systems and services. I have solid experience migrating and modernizing .NET platforms to clean and hexagonal architectures, optimizing databases, and automating deployments through CI/CD in Azure. I am recognized for my strong sense of responsibility, research abilities, and technical leadership in small development teams. I am committed to software quality, security (OWASP), and continuous process improvement, seeking to leverage my technical expertise in .NET to drive business value in collaborative environments.`,
+      body: `I'm a Backend Developer specializing in .NET (C#, .NET Core, .NET 6/8/10), with 4+ years modernizing high-performance backend systems on Azure. I migrated a full monolithic platform to .NET 6 and designed Clean/Hexagonal architectures for a 7-microservice ecosystem serving 3,000+ users today. As a freelance consultant, I integrate AI tools into real development workflows to speed up delivery and automate processes; in parallel, I research applied AI (RAG, agents) on my own in personal projects. I'm looking for a role where I can combine solid .NET engineering with this applied AI foundation.`,
     },
 
     skills: {
@@ -280,14 +272,14 @@ const TRANSLATIONS = {
         {
           id:       'sag',
           company:  'SAG — Soluciones Ambientales y Geográficas S.A.S.',
-          role:     '.NET Backend Developer',
+          role:     'Freelance Consultant — .NET Development & AI Automation',
           period:   'Apr 2026 — Sep 2026',
-          location: 'Neiva, Huila',
+          location: 'Neiva, Huila (Remote)',
           bullets: [
-            'Developed the corporate website with Astro 6, Tailwind CSS 4, and strict TypeScript (ES/EN i18n, Leaflet maps), deployed on Cloudflare Pages.',
-            'Built SAG Project Hub, an internal task, project, and calendar manager (kanban-style) for the field team, serverless and installable as an offline PWA; incrementally migrated its codebase from vanilla JavaScript to React 19 with TypeScript.',
-            'Integrated the Google Drive API end to end: authentication, near real-time sync, search by name and content (OCR), and per-project folder management.',
-            'Implemented the test suite with Vitest and Testing Library on jsdom, adopted a Git workflow with develop/feature/fix branches and pull requests, and incorporated AI tools (Claude Code, Antigravity, Open Code) into the daily workflow.',
+            'As a freelance consultant, I researched and built the corporate website from the ground up with Astro 6, Tailwind CSS 4, and strict TypeScript (ES/EN i18n, interactive maps with Leaflet), deployed on Cloudflare Pages.',
+            'Designed and built, with AI assistance, SAG Project Hub for a team of 3 field planning leads: a kanban-style manager built directly in React 19 with TypeScript, serverless and installable as an offline PWA, with its automated test suite in Vitest and Testing Library.',
+            'Researched and integrated the Google Drive API end to end to automate document sync, content search (OCR), and organization for the team, removing manual filing work.',
+            'Advised on introducing AI tools (Claude Code, Antigravity, Open Code) into the daily workflow, adopting a Git workflow based on develop/feature/fix branches and pull requests.',
           ],
         },
         {
@@ -295,21 +287,16 @@ const TRANSLATIONS = {
           company:  'INTEIA',
           role:     '.NET Backend Developer',
           period:   'Feb 2023 — Mar 2026',
-          location: 'Medellín, Antioquia',
+          location: 'Medellín, Antioquia (Remote)',
           bullets: [
-            'Migrated the backend from .NET Core 3.1 to .NET 6, updating dependencies and validating compatibility through comprehensive unit and integration testing before each production deployment.',
-            'Refactored monolithic architectures (N-layer) applying SOLID principles and design patterns to improve code modularity and maintainability.',
-            'Implemented modern architectures in .NET 8 (Clean Architecture and Hexagonal) with CQRS, Mediator, and a Services layer to centralize business logic, prioritizing scalability and resilience.',
-            'Organized code by Use Cases, developed custom middlewares for centralized exception handling and logging, and implemented JWT authentication along with role and policy-based authorization to secure endpoints.',
-            'Applied dependency injection and object mapping (Mapper) between entities and DTOs, implemented the persistence layer using the Repository/UnitOfWork pattern, and designed proxies for secure external service consumption.',
-            'Automated background tasks and scheduled processes with Hangfire, including execution monitoring and fault retries.',
-            'Implemented real-time communication with SignalR integrated with Firebase Cloud Messaging for push notification delivery.',
-            'Configured CI/CD pipelines in Azure DevOps, achieving reproducible, monitored, and reliable deployments.',
-            'Identified and remediated security vulnerabilities with SonarQube and Snyk, applying OWASP Top 10 standards.',
-            'Optimized performance and indexes for MongoDB and Cosmos DB databases, and integrated Redis Cache to reduce response times.',
-            'Designed and managed Docker containers, optimizing images, networks, and security practices for scalable deployments.',
-            'Integrated Azure services (Key Vault, Communication Services, Application Insights, Entra ID B2C) and SendGrid for communications, monitoring, and secure identity management.',
-            'Ensured software quality through unit testing with XUnit and data validation using Fluent Validation.',
+            'Migrated a full monolithic system from .NET Core 3.1 to .NET 6. The version change broke all functionality due to direct dependencies on the previous framework: I adapted 100% of the codebase and validated every change with unit and integration tests before each production deployment.',
+            'Refactored the monolithic (N-layer) architecture and implemented modern .NET 8 architectures (Clean Architecture and Hexagonal) with CQRS, Mediator, and a Services layer organized by Use Cases, across an ecosystem of 7 microservices with an API Gateway as the centralized entry point, deployed on Azure together with the DevOps team.',
+            'Implemented JWT authentication and role/policy-based authorization, centralized exception-handling and logging middlewares, dependency injection, the Repository/UnitOfWork pattern, and proxies for external services; automated background tasks with Hangfire (execution monitoring and fault retries), ensuring quality with XUnit and Fluent Validation.',
+            'Implemented real-time communication with SignalR integrated with Firebase Cloud Messaging, delivering personalized push notifications per company to bases of up to 3,000 simultaneous users.',
+            'Configured CI/CD pipelines in Azure DevOps with deployments at the close of each sprint (2-week cycles) plus additional releases for critical bugs, achieving reproducible, monitored, and reliable deployments.',
+            'Identified and remediated high- and medium-severity security vulnerabilities with SonarQube and Snyk, applying OWASP Top 10 and strengthening authentication and authorization.',
+            'Led the migration of a self-managed MongoDB instance on a virtual machine to Azure Cosmos DB for MongoDB (fully managed), preserving 100% of existing functionality. Optimized indexes and integrated Redis Cache, reducing response times to a 500ms–1s range.',
+            'Designed and managed Docker containers, and integrated Azure services (Key Vault, Communication Services, Application Insights, Entra ID B2C) and SendGrid for communications, monitoring, and secure identity management.',
           ],
         },
         {
@@ -317,13 +304,12 @@ const TRANSLATIONS = {
           company:  'INDIGO TECHNOLOGIES',
           role:     'Technical Junior Developer LII',
           period:   'Feb 2022 — Jan 2023',
-          location: 'Neiva, Huila',
+          location: 'Neiva, Huila (On-site)',
           bullets: [
-            'Designed and developed RESTful APIs with .NET Framework and .NET 6 (Database First), documented with Swagger and tested with Postman.',
-            'Implemented JWT authentication and consumed external APIs ensuring reliable cross-system integration.',
-            'Managed project lifecycle in Azure DevOps and Git: branches, pull requests, conflict resolution and deployments.',
-            'Integrated serverless microservices with AWS Lambda, DynamoDB (secondary indexing) and API Gateway with route-level access control.',
-            'Participated in CI/CD pipeline configuration and automated deployment strategies on both Azure and AWS.',
+            'Designed and developed 3 RESTful APIs in .NET Framework (migrated and optimized to .NET 6, Database First approach), implementing a custom JWT authentication mechanism to centralize security — the primary focus of my role on the team.',
+            'Documented APIs with Swagger (OpenAPI) and ran thorough testing with Postman, facilitating integration with cross-functional teams.',
+            'Managed project lifecycle in Azure DevOps and Git (branches, pull requests, conflict resolution, and deployments).',
+            'Designed decoupled serverless microservices and participated in CI/CD pipeline configuration and automated deployment strategies on Azure.',
           ],
         },
         {
@@ -331,13 +317,12 @@ const TRANSLATIONS = {
           company:  'SOAINT SOFTWARE',
           role:     'Backend Developer',
           period:   'Jun 2021 — Jan 2022',
-          location: 'Bogotá D.C.',
+          location: 'Bogotá D.C. (Remote)',
           bullets: [
-            'Designed and developed microservices with Java and Spring Boot, promoting scalable and decoupled architectures.',
-            'Designed and consumed REST APIs documented with Swagger; endpoint testing with Postman.',
-            'Managed and configured containers in OpenShift (Pod deployments and basic adjustments).',
-            'Developed stored procedures, triggers and cursors in SQL Server; DML optimization.',
-            'Integrated file storage with Amazon S3 for object management and content versioning.',
+            'Designed and developed 10 scalable microservices with Java and Spring Boot (JSON reading and processing), exposing and consuming REST APIs documented with Swagger (OpenAPI) and validated with Postman.',
+            'Managed and deployed containers in OpenShift, making basic adjustments to Pods.',
+            'Developed stored procedures, views, triggers, and cursors in SQL Server for database optimization.',
+            'Integrated cloud file storage for object management and content versioning.',
           ],
         },
       ],
@@ -379,8 +364,8 @@ const TRANSLATIONS = {
         },
         {
           name:  'API Gateway & Serverless (Private)',
-          desc:  'Monolith modernization and decoupling by migrating flows to AWS Lambda, with access control via API Gateway and indexing in DynamoDB.',
-          tags:  ['AWS Lambda', 'DynamoDB', 'Microservices'],
+          desc:  'Monolith modernization and decoupling by migrating flows to Azure Functions, with access control via Azure API Management and indexing in Cosmos DB.',
+          tags:  ['Azure Functions', 'Cosmos DB', 'Microservices'],
           links: { private: true },
         },
         {
@@ -393,16 +378,15 @@ const TRANSLATIONS = {
     },
 
     certs: {
-      title: 'Certifications',
+      title: 'Certifications & Courses',
       items: [
         {
-          name:   "Master's in Software Engineering",
-          issuer: 'UNIR',
-          year:   '2024',
-          icon:   'school',
+          name:   'Applied AI — Solving Real Challenges with Claude',
+          issuer: 'Smart4AI & Ruta N · Intensive bootcamp (12h)',
+          year:   'Jul 2026',
         },
       ],
-      note: 'Currently preparing for Azure (AZ-900 / AZ-204) and AWS Cloud Practitioner certifications.',
+      note: 'Courses in progress (Udemy): Enterprise Application Architecture with .NET 10 · .NET Microservices Observability with OpenTelemetry · Docker and Kubernetes for .NET · Dapper with .NET 8 and Minimal APIs.',
     },
 
     contact: {
@@ -432,7 +416,7 @@ const TRANSLATIONS = {
       title: 'Languages',
       items: [
         { name: 'Spanish', level: 'Native' },
-        { name: 'English', level: 'Intermediate (B1)' },
+        { name: 'English', level: 'Basic (A2)' },
       ],
     },
   },
